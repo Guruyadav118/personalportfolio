@@ -1,0 +1,129 @@
+import fs from 'fs';
+
+function generatePDF() {
+  const content = `%PDF-1.4
+1 0 obj
+<<
+  /Type /Catalog
+  /Pages 2 0 R
+>>
+endobj
+2 0 obj
+<<
+  /Type /Pages
+  /Kids [3 0 R]
+  /Count 1
+>>
+endobj
+3 0 obj
+<<
+  /Type /Page
+  /Parent 2 0 R
+  /MediaBox [0 0 595.28 841.89]
+  /Contents 4 0 R
+  /Resources <<
+    /Font <<
+      /F1 <<
+        /Type /Font
+        /Subtype /Type1
+        /BaseFont /Helvetica-Bold
+      >>
+      /F2 <<
+        /Type /Font
+        /Subtype /Type1
+        /BaseFont /Helvetica
+      >>
+    >>
+  >>
+>>
+endobj
+4 0 obj
+<<
+  /Length 1200
+>>
+stream
+BT
+/F1 22 Tf
+50 780 Td
+(GURU PRASANNA) Tj
+/F2 12 Tf
+0 -25 Td
+(Aspiring Software Developer & AI/ML Student) Tj
+0 -18 Td
+(Email: guruprasanna754@gmail.com | Andhra Pradesh, India) Tj
+0 -15 Td
+(GitHub: https://github.com/Guruyadav118 | LinkedIn: https://linkedin.com/in/guru-prasanna-b34898295) Tj
+
+0 -30 Td
+/F1 14 Tf
+([ PLACEHOLDER RESUME DOCUMENT ]) Tj
+/F2 10 Tf
+0 -18 Td
+(NOTE: This is a clearly-marked placeholder PDF. To replace with your actual resume,) Tj
+0 -14 Td
+(simply overwrite the 'Guru_Prasanna_Resume.pdf' file located in the /public directory.) Tj
+
+0 -30 Td
+/F1 14 Tf
+(EDUCATION) Tj
+/F2 11 Tf
+0 -18 Td
+(Bachelor of Technology (B.Tech) - Artificial Intelligence & Machine Learning) Tj
+0 -15 Td
+(Sreenivasa Institute of Technology and Management Studies | Expected: 2027) Tj
+0 -18 Td
+(Intermediate / Higher Secondary Education) Tj
+0 -15 Td
+(Bhavana Junior College | 2023) Tj
+0 -18 Td
+(Secondary School Education) Tj
+0 -15 Td
+(ZPHS School, Velpur | 2020) Tj
+
+0 -30 Td
+/F1 14 Tf
+(TECHNICAL SKILLS) Tj
+/F2 11 Tf
+0 -18 Td
+(Languages: Python, Java, C++, JavaScript) Tj
+0 -15 Td
+(Frontend: HTML5, CSS3, React.js, Responsive Web Design, DOM Manipulation) Tj
+0 -15 Td
+(Backend & DB: Node.js, Django, CRUD Operations, MySQL, NoSQL Fundamentals) Tj
+0 -15 Td
+(Developer Tools: Git, GitHub, Visual Studio Code) Tj
+
+0 -30 Td
+/F1 14 Tf
+(INTERNSHIP EXPERIENCE) Tj
+/F2 11 Tf
+0 -18 Td
+(Full Stack Web Development Intern - Slash Mark IT Solutions) Tj
+0 -15 Td
+(Duration: May 2026 - June 2026) Tj
+0 -15 Td
+(Focused on web development activities, frontend interfaces, and problem-solving.) Tj
+ET
+endstream
+endobj
+xref
+0 5
+0000000000 65535 f 
+0000000010 00000 n 
+0000000060 00000 n 
+0000000117 00000 n 
+0000000414 00000 n 
+trailer
+<<
+  /Size 5
+  /Root 1 0 R
+>>
+startxref
+1670
+%%EOF`;
+
+  fs.writeFileSync('./public/Guru_Prasanna_Resume.pdf', content);
+  console.log('PDF generated successfully!');
+}
+
+generatePDF();

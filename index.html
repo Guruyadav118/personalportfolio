@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Meta Tags -->
+    <title>Guru Prasanna | Aspiring Software Developer & AI/ML Student</title>
+    <meta name="title" content="Guru Prasanna | Aspiring Software Developer & AI/ML Student" />
+    <meta name="description" content="Portfolio of Guru Prasanna - B.Tech student in Artificial Intelligence and Machine Learning specializing in Web Development, Software Engineering, and building intelligent user-centric digital experiences." />
+    <meta name="keywords" content="Guru Prasanna, Software Developer, AI/ML Student, Web Developer, React, Python, JavaScript, Portfolio, Frontend Developer, SITAMS" />
+    <meta name="author" content="Guru Prasanna" />
+    <meta name="theme-color" content="#030712" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://github.com/Guruyadav118" />
+    <meta property="og:title" content="Guru Prasanna | Aspiring Software Developer & AI/ML Student" />
+    <meta property="og:description" content="Explore personal projects, technical skills, education, and internship experience of Guru Prasanna." />
+    <meta property="og:image" content="/images/profile.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://github.com/Guruyadav118" />
+    <meta property="twitter:title" content="Guru Prasanna | Aspiring Software Developer & AI/ML Student" />
+    <meta property="twitter:description" content="Explore personal projects, technical skills, education, and internship experience of Guru Prasanna." />
+    <meta property="twitter:image" content="/images/profile.jpg" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Theme initialization script to prevent flash of wrong theme -->
+    <script>
+      (function() {
+        try {
+          const stored = localStorage.getItem('gp_theme');
+          if (stored === 'light') {
+            document.documentElement.classList.remove('dark');
+          } else {
+            document.documentElement.classList.add('dark');
+          }
+        } catch (e) {
+          document.documentElement.classList.add('dark');
+        }
+      })();
+    </script>
+  </head>
+  <body class="bg-slate-50 text-slate-800 dark:bg-[#070b14] dark:text-slate-100 font-sans selection:bg-indigo-500 selection:text-white transition-colors duration-300 antialiased overflow-x-hidden">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
